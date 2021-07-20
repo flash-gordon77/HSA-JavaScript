@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    // Einbinden vom Stylesheet
+    <link rel="stylesheet" href="css/stylesheet.css">
+    // Einbinden von calculator.js
+    <script src="js/calculator.js"></script>
+</head>
+<body>
+
+<h1>Taschenrechner</h1>
+<form name="Rechner" action="" onsubmit="Ergebnis();return false;">
+    <output name="Display" id="Display"></output>
+
+    <fieldset>
+        <input type="button" value=" 7 " onclick="Hinzufuegen('7')">
+        <input type="button" value=" 8 " onclick="Hinzufuegen('8')">
+        <input type="button" value=" 9 " onclick="Hinzufuegen('9')">
+        <input type="button" value=" + " onclick="Hinzufuegen('+')">
+        <input type="button" value=" 4 " onclick="Hinzufuegen('4')">
+        <input type="button" value=" 5 " onclick="Hinzufuegen('5')">
+        <input type="button" value=" 6 " onclick="Hinzufuegen('6')">
+        <input type="button" value=" - " onclick="Hinzufuegen('-')">
+        <input type="button" value=" 1 " onclick="Hinzufuegen('1')">
+        <input type="button" value=" 2 " onclick="Hinzufuegen('2')">
+        <input type="button" value=" 3 " onclick="Hinzufuegen('3')">
+        <input type="button" value=" * " onclick="Hinzufuegen('*')">
+        <input type="button" value=" 0 " onclick="Hinzufuegen('0')">
+        <input type="button" value=" . " onclick="Hinzufuegen('.')">
+        <input type="button" value=" = " onclick="Ergebnis()">
+        <input type="button" value=" / " onclick="Hinzufuegen('/')">
+        <input type="button" value=" << " onclick="ErgZurueck()">
+        <input type="reset"  value=" C ">
+
+    </fieldset>
+</form>
+
+</body>
+</html>
